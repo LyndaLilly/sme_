@@ -1,16 +1,13 @@
-x = 7
+class Student{
+    names = "Smith"
+    age = 67
+    email = "smith@gmail.com"
 
-console.log(x)
+    study(){
+//anything
+    }
 
-
-function add(x,y){
-    return x + y
+    go(){
+        //some
+    }
 }
-
-add(3, 7)
-
-firstname = "Lynda"
-
-a = 67
-
-txt = "branch"
