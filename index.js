@@ -8,3 +8,5 @@ function add(x,y){
 }
 
 add(3, 7)
+
+firstname = "Lynda"
