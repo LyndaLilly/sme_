@@ -136,16 +136,101 @@
 // Ebere.setName = "Dennis"
 // Ebere.getName
 
+// class User{
+//     constructor(names){
+//         this.names = names
+//     }
+
+//    static anons(){
+//     console.log("anonymous")
+//    }
+// }
+
+// const Ebere = new User("Ebere")
+
+// User.anons()
+
+// class Staff{
+//     constructor(name){
+//         this._name = name
+//     }
+
+//     get getNames(){
+//         console.log(this._name)
+//     }
+
+//     set setNames(anyName){
+//         this._name = anyName
+//     }
+// }
+
+// const Offor = new Staff("Offor")
+
+// Offor.setNames = "Chike"
+// Offor.getNames
+
+// class Fruits{
+//     constructor(types){
+//         this._types = types
+//     }
+
+//     static apple(){
+//         console.log("Mango")
+//     }
+// }
+
+// const Apple = new Fruits("Apple")
+
+// Fruits.apple()
+
+
+// class User = {
+//     init(name){
+//         this.name = name
+//     },
+
+//     printName(){
+//         console.log(this.name)
+//     }
+// }
+
+// let newObj = Object.create(User)
+// newObj.init("Kenneth")
+
+// newObj.printName()
+
+// class User{
+//     constructor(name, age){
+//         this._name = name
+//         this._age = age
+//     }
+// }
+
+// const newUser = new User("Abby", 23)
+// console.log(newUser._age)
+// console.log(newUser._name)
+
+
 class User{
-    constructor(names){
-        this.names = names
+    #name
+    constructor(name, age){
+        this.#name = name
+        this._age = age
     }
 
-   static anons(){
-    console.log("anonymous")
+   #printName(){
+    console.log(this.#name)
+   }
+
+   printAge(){
+    console.log(this._age)
+   }
+
+   printNamePrivate(){
+    this.#printName()
    }
 }
 
-const Ebere = new User("Ebere")
-
-User.anons()
+const newUser = new User("Abby", 23)
+// newUser.printNamePrivate()
+newUser.printAge()
